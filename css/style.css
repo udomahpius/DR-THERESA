@@ -1,11 +1,57 @@
 /********** Template CSS **********/
 :root {
-    --primary: #1E60AA;
-    --secondary: #FF4917;
+    --primary: #1c76eb;
+    --secondary: #188f8f;
     --light: #EDF1FC;
-    --dark: #17224D;
+    --dark: #184c8f;
+}
+.hover-1:hover{
+    background-color:transparent !important;
+    border: 1px solid var(--primary) !important;
+    border-radius: 35px;
+    transition: all ease-in-out 0.5s;
+}
+.text-primary{
+   color:  #184c8f !important;
+   align-items: center !important;
+   
+} 
+.smallText{
+    line-height: 2px !important;
+}
+.smallText p span{
+    font-size: 15px !important;
+}
+.smallText p .span-color{
+    color: #6b6a6a !important;
+}
+.text-smalll h6, p, a, button{
+    font-size: 15px !important;
 }
 
+.text-smalll a img{
+   width: 40px !important;
+
+}
+.text-smalll a img:hover{
+    width: 45px !important;
+    transition: all ease-in-out 0.5s !important;
+    border: none !important;
+ }
+ 
+
+.btn-primary{
+    background-color: #1f4442 !important;
+}
+.bg-primary{
+    background-color: #355e79 !important;
+}
+.text-secondary{
+    color: #5bf3e4 !important;
+}
+.bg-dark{
+    background-color: #173a4e !important;
+}
 .fw-medium {
     font-weight: 600 !important;
 }
@@ -227,7 +273,10 @@
     font-size: 22px;
     transition: .5s;
 }
-
+.caro-img-bg img{
+    width: 700px !important;
+    height: 700px !important;
+}
 .header-carousel .owl-nav .owl-prev:hover,
 .header-carousel .owl-nav .owl-next:hover {
     background: var(--primary);
@@ -235,7 +284,7 @@
 }
 
 .page-header {
-    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(../img/bg.jpg) center center no-repeat;
+    background: linear-gradient(rgba(8, 97, 78, 0.4), rgba(11, 2, 94, 0.4)), url(../img/IMG_20230624_0001.jpg) center center no-repeat;
     background-size: cover;
 }
 
@@ -246,10 +295,26 @@
 
 /*** Facts ***/
 .fact {
-    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(../img/bg.jpg) center center no-repeat;
+    background: linear-gradient(rgba(89, 226, 180, 0.4), rgba(0, 0, 0, .4)), url(../img/bg-image.jpg) center center no-repeat;
     background-size: cover;
+    /* height: 50vh !important; */
 }
+.fact .box-shadow div{
+    padding:3rem 2px !important;
+    transition: all ease-in-out 0.5s !important;
 
+}
+.fact .box-shadow div:hover{
+    border: 1px solid gray !important;
+    background-color: #1f4442 !important;
+    border-radius: 12px !important;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+.about-carousel-height .bg-light{
+    background-color: #d1e0f3 !important;
+    height: 45vh !important;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
 
 /*** Service ***/
 .service-item-top img {
@@ -283,7 +348,9 @@
     border-color: var(--primary);
 }
 
-
+/* .carousel-height .height-div{
+    height: auto !important;
+} */
 /*** Booking ***/
 .video {
     position: relative;
@@ -397,6 +464,46 @@
     color: #FFFFFF;
     background: #000000;
     opacity: 1;
+}
+.top-radius{
+    border-top-left-radius: 5px !important;
+    border-top-right-radius: 5px !important;
+
+}
+/* .top-radius:hover{
+    transition: all ease-in-out 0.5s !important;
+   transform: scale(1.1);
+
+} */
+.h-text{
+    border-radius: 8px !important;
+    transition: all ease-in-out 0.5s !important;
+}
+.about-text-height{
+    border-radius: 8px !important;
+    transition: all ease-in-out 0.5s !important;
+    height: 40vh !important;
+ 
+}
+.about-text-height:hover{
+    background-color:#d1e0f3 !important;
+
+}
+
+@media(min-width:700px){
+    .h-text{
+        height: 80vh !important;
+
+    }
+
+}
+
+
+.h-text:hover:hover{
+    
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px !important;
+    background-color: ivory !important;
+    color: #000 !important;
 }
 
 .bootstrap-datetimepicker-widget.bottom {
