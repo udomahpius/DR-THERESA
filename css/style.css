@@ -292,7 +292,10 @@
     color: var(--light);
 }
 
-
+.hover-bg:hover{
+    background-color:var(--light) !important;
+    transition: all ease-in-out 0.5s;
+}
 /*** Facts ***/
 .fact {
     background: linear-gradient(rgba(89, 226, 180, 0.4), rgba(0, 0, 0, .4)), url(../img/bg-image.jpg) center center no-repeat;
