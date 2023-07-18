@@ -1,13 +1,13 @@
 /********** Template CSS **********/
 :root {
-    --primary: #1c76eb;
-    --secondary: #188f8f;
+    --primary: #2489b8;
+    --secondary: #217777;
     --light: #EDF1FC;
     --dark: #184c8f;
 }
 
 body{
-    background-color: #f7f3e2 !important;
+    background-color: #f8f8ee !important;
 }
 .hover-1:hover{
     background-color:transparent !important;
@@ -35,7 +35,9 @@ body{
 .text-smalll h6, p, a, button{
     font-size: 15px !important;
 }
-
+.font-small{
+    font-size: 17px !important;
+}
 .text-smalll a img{
    width: 40px !important;
 
@@ -726,4 +728,23 @@ body{
 
 .footer .copyright a {
     color: var(--light);
+}
+
+.button-display-item {
+   text-align: left !important;
+}
+.button-display-item i{
+    /* text-align: right !important; */
+    float: right !important;
+ }
+ 
+/* script section */
+.display-non{
+    display: none !important;
+}
+.icon-toggle-up{
+    display:none;
+}
+.icon-toggle-down{
+    display:none;
 }

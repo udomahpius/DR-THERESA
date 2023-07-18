@@ -173,3 +173,38 @@
     
 })(jQuery);
 
+// script section for button display items for research section
+
+let buttonElement = document.querySelector('.button-display-item');
+let displayItems = document.querySelector('.display-all');
+
+// selecting HTML button element
+// css
+
+
+let dataDisplay = false
+let toggleIcon_1 = document.querySelector('.icon-toggle_1');
+let toggleIcon_2 = document.querySelector('.icon-toggle_2')
+
+function removeClass() {
+     toggleIcon_1.classList.remove('icon-toggle-down');
+}
+removeClass()
+
+const buttonApplyFunction = buttonElement.addEventListener('click', () => {
+      if(!dataDisplay) {
+          displayItems.classList.remove('display-non');
+          dataDisplay = true;
+          toggleIcon_1.classList.remove('icon-toggle-down');
+          toggleIcon_2.classList.add('icon-toggle-up');
+          
+        
+      }else {
+          displayItems.classList.add('display-non');
+          dataDisplay = false;
+          toggleIcon_2.classList.remove('icon-toggle-up');
+          toggleIcon_1.classList.add('icon-toggle-down');
+    }
+     
+  })
+  buttonApplyFunction()
