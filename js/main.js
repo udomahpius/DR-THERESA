@@ -178,9 +178,6 @@
 let buttonElement = document.querySelector('.button-display-item');
 let displayItems = document.querySelector('.display-all');
 
-// selecting HTML button element
-// css
-
 
 let dataDisplay = false
 let toggleIcon_1 = document.querySelector('.icon-toggle_1');
