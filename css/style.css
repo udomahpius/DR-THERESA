@@ -753,3 +753,11 @@ body{
 .icon-toggle-down{
     display:none;
 }
+
+
+/* map width for small device */
+@media screen and (max-width:700px) {
+    .md-width{
+        width: auto !important;
+    }
+}
