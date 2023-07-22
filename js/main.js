@@ -183,8 +183,9 @@ let dataDisplay = false
 let toggleIcon_1 = document.querySelector('.icon-toggle_1');
 let toggleIcon_2 = document.querySelector('.icon-toggle_2')
 
-function removeClass() {
-     toggleIcon_1.classList.remove('icon-toggle-down');
+
+const removeClass = () => {
+    toggleIcon_1.classList.remove('icon-toggle-down');
 }
 removeClass()
 
